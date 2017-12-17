@@ -2,6 +2,8 @@ FROM ubuntu:16.04
 
 LABEL maintainer="Kjell Breiland <kjell.breiland@gmail.com>"
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y \
   binutils \
   mailutils \

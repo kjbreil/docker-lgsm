@@ -45,6 +45,9 @@ RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y \
   libssl1.0.0:i386 \
   libgtk2.0-0:i386 \
   libdbus-glib-1-2:i386 \
+  binutils \
+  bc \
+  lib32z1 \
   libnm-glib-dev:i386 && \
   rm -rf /var/lib/apt/lists/* && \
   useradd -ms /bin/bash server

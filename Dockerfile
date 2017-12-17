@@ -55,3 +55,5 @@ WORKDIR /home/server/
 
 RUN wget -N --no-check-certificate https://gameservermanagers.com/dl/linuxgsm.sh && \
   chmod +x linuxgsm.sh
+
+CMD ["./entrypoint.sh", "list"]

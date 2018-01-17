@@ -2,7 +2,7 @@ NS = kjbreil
 
 REPO = lgsm
 
-.PHONY: build no-cache
+.PHONY: 
 
 default: build
 
@@ -21,5 +21,4 @@ run:
 push:
 	docker push $(NS)/$(REPO)
 
-clean-docker:
-	docker system prune -a
+

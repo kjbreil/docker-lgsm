@@ -4,7 +4,7 @@ REPO = lgsm
 
 .PHONY: 
 
-default: build
+default: build push
 
 build:
 	docker build -t $(NS)/$(REPO) .
